@@ -1,10 +1,10 @@
 const Appointment = () => {
   return (
     <div className=" mt-24 pb-10">
-      <div className="flex gap-5 justify-between h-full container mx-auto px-4 md:px-0">
+      <div className="md:flex gap-5 justify-between h-full container mx-auto px-4 md:px-0">
         {/* Left box */}
         <div
-          className=" w-[35%] h-[484px] flex flex-col px-5 items-center justify-center rounded-md"
+          className=" w-full md:w-[35%] h-[484px] flex flex-col px-5 items-center justify-center rounded-md"
           style={{
             backgroundImage: `linear-gradient(to bottom, rgba(82,53,160,0.4), rgba(82,53,160,1))`,
           }}
@@ -12,10 +12,13 @@ const Appointment = () => {
           <h1 className="bg-primary text-secondaryText text-xl md:text-3xl font-bold cursor-pointer px-2 py-1 rounded-md">
             Register Now
           </h1>
-          <p className="mt-4 text-white text-[.9rem] text-center">Registered patients will get <span className="font-bold">5%</span><br/> discount on hospital admission</p>
+          <p className="mt-4 text-white text-[.9rem] text-center">
+            Registered patients will get <span className="font-bold">5%</span>
+            <br /> discount on hospital admission
+          </p>
         </div>
         {/* Right box */}
-        <div className="w-[65%] shadow-md appointment_border px-4 py-5 rounded-md">
+        <div className="w-full mt-4 md:mt-0 md:w-[65%] shadow-md appointment_border px-4 py-5 rounded-md">
           <h1 className="text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 text-primary border-secondary mb-4 mt-10 pb-2">
             Make an Appointment
           </h1>
